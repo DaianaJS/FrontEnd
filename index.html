@@ -28,7 +28,11 @@
                             src="../../../assets/img/linkedin.png" id="linkedin"></a>
                     <a href="https://www.instagram.com/daiasotelo18/" target="_blank"><img
                             src="../../../assets/img/instagram.png" id="instagram"></a>
-                    <button type="button" class="btn btn-outline-light" (click)="login()">Ingresar</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Ingresar
+                    </button>
                 </div>
             </div>
         </div>
@@ -48,7 +52,7 @@
             </div>
             <div class="col-8">
                 <span>
-                    <h1 id="aboutme">Acerca de mí</h1>
+                    <h1 id="aboutme">Acerca de mí<button type="button" class="btn btn-primary" id="EditSobreMi"><i class="fa-solid fa-pen-ruler"></i></button></h1>
                     <p id="aboutmeP">
                         Soy una persona joven con muchas ganas de trabajar, creativa, con facilidad para aprender,
                         comprometida y responsable.<br>
@@ -65,7 +69,7 @@
                 <img src="/assets/img/edu.jpeg" class="img-fluid" id="foto2">
             </div>
             <div class="col-8">
-                <h1 id="Educacion">Educación</h1>
+                <h1 id="Educacion">Educación<button type="button" class="btn btn-primary" id="EditEdu"><i class="fa-solid fa-pen-ruler"></i></button></h1>
                 <ul>
                     <li>
                         <h2><b>Segunda etapa del Plan Argentina Programa - #YoProgramo</b></h2><br>
@@ -107,7 +111,7 @@
                 <img src="/assets/img/explab.jpeg" class="img-fluid" id="foto3">
             </div>
             <div class="col-8">
-                <h1 id="Experiencia">Experiencia Laboral</h1>
+                <h1 id="Experiencia">Experiencia Laboral<button type="button" class="btn btn-primary" id="EditExp"><i class="fa-solid fa-pen-ruler"></i></button></h1>
                 <ul>
                     <li>
                         <h2><b>Cuidado de niños</b></h2>
@@ -135,7 +139,7 @@
     </section>
     <section>
         <!--Sección HardSkills-->
-        <h1 id="hardskills">HardSkills e Idiomas</h1>
+        <h1 id="hardskills">HardSkills e Idiomas<button type="button" class="btn btn-primary" id="EditHS"><i class="fa-solid fa-pen-ruler"></i></button></h1>
         <div class="row hard">
             <div class="col-4">
                 <img src="/assets/img/html.png" id="html">
@@ -160,7 +164,7 @@
     </section>
     <section>
         <!--Sección SoftSkills-->
-        <h1 id="softskills">SoftSkills</h1>
+        <h1 id="softskills">SoftSkills<button type="button" class="btn btn-primary" id="EditSS"><i class="fa-solid fa-pen-ruler"></i></button></h1>
         <div class="row soft">
             <div class="col-4">
                 <img src="/assets/img/creatividad.jpeg" id="creatividad">
@@ -192,7 +196,7 @@
     </section>
     <section>
         <!--Sección Proyectos Realizados-->
-        <h1 id="proyectos">Proyectos Realizados</h1>
+        <h1 id="proyectos">Proyectos Realizados<button type="button" class="btn btn-primary" id="EditProy"><i class="fa-solid fa-pen-ruler"></i></button></h1>
         <div class="row">
             <div class="col-7">
                 <h2 id="pf"><strong>Proyecto Final - Argentina Programa #YoProgramo</strong></h2>
@@ -203,6 +207,34 @@
                 <img src="/assets/img/proyecto.png" class="img-fluid img-proyecto" id="proyectito">
             </div>
     </section>
+
+    <!-- Modal login-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Ingrese a su cuenta</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Ingresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
