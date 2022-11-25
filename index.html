@@ -14,12 +14,13 @@
 </head>
 
 <body>
+    <!--Sección Navbar-->
     <section>
-        <!--Sección Navbar-->
         <div class="row">
             <div class="container">
                 <div class="logo">
-                    <img src="../../../assets/img/APLogo.png" alt="Logo ArgentinaPrograma" id="logoAP">
+                    <a class="navbar-brand" href="#"><img src="../../../assets/img/APLogo.png"
+                            alt="Logo ArgentinaPrograma" id="logoAP"></a>
                 </div>
                 <div class="redes">
                     <a href="https://github.com/MysticMoon18" target="_blank"><img src="../../../assets/img/github.png"
@@ -37,22 +38,26 @@
             </div>
         </div>
     </section>
-
+    <!--Sección Banner-->
     <section>
-        <!--Sección Banner-->
         <div id="banner">
-            <img src="/assets/img/edit.jpeg" id="fotobanner">
+            <img src="/assets/img/edit.jpeg" id="fotobanner" button type="button" class="btn btn-success" data-bs-toggle="modal"
+            data-bs-target="#bannerModal" id="EditBanner">
         </div>
     </section>
+    <!--Sección Acerca de mi-->
     <section>
-        <!--Sección Acerca de mi-->
         <div class="row">
             <div class="col-4">
                 <img src="/assets/img/acdm.png" class="img-fluid" id="foto">
             </div>
             <div class="col-8">
                 <span>
-                    <h1 id="aboutme">Acerca de mí<button type="button" class="btn btn-primary" id="EditSobreMi"><i class="fa-solid fa-pen-ruler"></i></button></h1>
+                    <h1 id="aboutme"> Acerca de mí <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#acercaModal" id="EditSobreMi">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                        </button>
+                    </h1>
                     <p id="aboutmeP">
                         Soy una persona joven con muchas ganas de trabajar, creativa, con facilidad para aprender,
                         comprometida y responsable.<br>
@@ -62,14 +67,18 @@
             </div>
         </div>
     </section>
+    <!--Sección Educación-->
     <section>
-        <!--Sección Educación-->
         <div class="row">
             <div class="col-4">
                 <img src="/assets/img/edu.jpeg" class="img-fluid" id="foto2">
             </div>
             <div class="col-8">
-                <h1 id="Educacion">Educación<button type="button" class="btn btn-primary" id="EditEdu"><i class="fa-solid fa-pen-ruler"></i></button></h1>
+                <h1 id="Educacion"> Educación <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                        data-bs-target="#educacionModal" id="EditEdu">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </button>
+                </h1>
                 <ul>
                     <li>
                         <h2><b>Segunda etapa del Plan Argentina Programa - #YoProgramo</b></h2><br>
@@ -104,14 +113,16 @@
             </div>
         </div>
     </section>
+    <!--Sección Experiencia-->
     <section>
-        <!--Sección Experiencia-->
         <div class="row">
             <div class="col-4">
                 <img src="/assets/img/explab.jpeg" class="img-fluid" id="foto3">
             </div>
             <div class="col-8">
-                <h1 id="Experiencia">Experiencia Laboral<button type="button" class="btn btn-primary" id="EditExp"><i class="fa-solid fa-pen-ruler"></i></button></h1>
+                <h1 id="Experiencia">Experiencia Laboral<button type="button" class="btn btn-dark"
+                        data-bs-toggle="modal" data-bs-target="#experienciaModal" id="EditExp"><i
+                            class="fa-solid fa-pen-ruler"></i></button></h1>
                 <ul>
                     <li>
                         <h2><b>Cuidado de niños</b></h2>
@@ -137,9 +148,10 @@
         </div>
         </ul>
     </section>
+    <!--Sección HardSkills-->
     <section>
-        <!--Sección HardSkills-->
-        <h1 id="hardskills">HardSkills e Idiomas<button type="button" class="btn btn-primary" id="EditHS"><i class="fa-solid fa-pen-ruler"></i></button></h1>
+        <h1 id="hardskills">HardSkills e Idiomas<button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                data-bs-target="#hardskillsModal" id="EditHS"><i class="fa-solid fa-pen-ruler"></i></button></h1>
         <div class="row hard">
             <div class="col-4">
                 <img src="/assets/img/html.png" id="html">
@@ -162,9 +174,10 @@
         </div>
         </div>
     </section>
+    <!--Sección SoftSkills-->
     <section>
-        <!--Sección SoftSkills-->
-        <h1 id="softskills">SoftSkills<button type="button" class="btn btn-primary" id="EditSS"><i class="fa-solid fa-pen-ruler"></i></button></h1>
+        <h1 id="softskills">SoftSkills<button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                data-bs-target="#softskillsModal" id="EditSS"><i class="fa-solid fa-pen-ruler"></i></button></h1>
         <div class="row soft">
             <div class="col-4">
                 <img src="/assets/img/creatividad.jpeg" id="creatividad">
@@ -194,9 +207,10 @@
                 <img src="/assets/img/pensamientocritico.jpeg" id="pensamientocritico">
             </div>
     </section>
+    <!--Sección Proyectos Realizados-->
     <section>
-        <!--Sección Proyectos Realizados-->
-        <h1 id="proyectos">Proyectos Realizados<button type="button" class="btn btn-primary" id="EditProy"><i class="fa-solid fa-pen-ruler"></i></button></h1>
+        <h1 id="proyectos">Proyectos Realizados<button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                data-bs-target="#proyectosModal" id="EditProy"><i class="fa-solid fa-pen-ruler"></i></button></h1>
         <div class="row">
             <div class="col-7">
                 <h2 id="pf"><strong>Proyecto Final - Argentina Programa #YoProgramo</strong></h2>
@@ -222,19 +236,231 @@
                             <label for="exampleInputEmail1" class="form-label">Email</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp">
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Ingresar</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--*************************************************************************************************************-->
+
+     <!--Modal banner-->
+     <div class="modal fade" id="bannerModal" tabindex="-1" aria-labelledby="bannerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="bannerModalLabel">Editar banner </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
+                            <label for="imgBanner" class="form-label"> URL: </label>
+                            <input type="url" placeholder="Inserte imágen para el banner"id="imgBanner"
+                                name="imgBanner">
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Ingresar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+
+    <!--*************************************************************************************************************-->
+
+    <!--Modal Acerca de Mi-->
+    <div class="modal fade" id="acercaModal" tabindex="-1" aria-labelledby="acercaModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="acercaModalLabel">Editar sección "Acerca de mí"</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="imgAcercaDeMi" class="form-label"> URL: </label>
+                            <input type="url" placeholder="Inserte logo para la sección'Acerca de mí'"id="imgAcercaDeMi"
+                                name="imgAcercaDeMi">
+                            <div class="mb-3">
+                                <label for="textoAcercaDeMi" class="form-label">Descripción de sección "Acerca de mi": </label>
+                                <textarea class="form-control" id="textoAcercaDeMi" rows="8"></textarea>
+                            </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--*************************************************************************************************************-->
+
+    <!--Modal edicion Educacion-->
+    <div class="modal fade" id="educacionModal" tabindex="-1" aria-labelledby="educacionModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="educacionModalLabel">Editar sección "Educación" </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="imgEducacion" class="form-label"> URL: </label>
+                            <input type="url" placeholder="Inserte logo para la sección 'Educación'"id="imgEducacion"
+                                name="imgEducacion">
+                            <div class="mb-3">
+                                <label for="textoEducacion" class="form-label">Descripción de sección "Educación": </label>
+                                <textarea class="form-control" id="textoEducacion" rows="8"></textarea>
+                            </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--*************************************************************************************************************-->
+
+    <!--Modal edicion Experiencia-->
+    <div class="modal fade" id="experienciaModal" tabindex="-1" aria-labelledby="experienciaModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="experienciaModalLabel">Editar sección "Experiencia"</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="imgExperiencia" class="form-label"> URL: </label>
+                            <input type="url" placeholder="Inserte logo para la sección 'Experiencia'"id="imgExperiencia"
+                                name="imgExperiencia">
+                            <div class="mb-3">
+                                <label for="textoExperiencia" class="form-label">Descripción de sección "Experiencia": </label>
+                                <textarea class="form-control" id="textoExperiencia" rows="8"></textarea>
+                            </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--*************************************************************************************************************-->
+
+    <!--Modal edicion Hardskills-->
+    <div class="modal fade" id="hardskillsModal" tabindex="-1" aria-labelledby="hardskillsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="hardskillsModalLabel">Editar sección "HardSkills"</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="imgHardSkills" class="form-label"> URL: </label>
+                            <input type="url" placeholder="Inserte imágen con sus HardSkills" id="imgHardSkills"
+                                name="imgHardSkills" required>
+                            </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--*************************************************************************************************************-->
+
+    <!--Modal edicion Softskills-->
+    <div class="modal fade" id="softskillsModal" tabindex="-1" aria-labelledby="softskillsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="softskillsModalLabel">Editar sección "SoftSkills"</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="imgSoftSkills" class="form-label"> URL: </label>
+                            <input type="url" placeholder="Inserte imágen con sus SoftSkills" id="imgSoftSkills"
+                                name="imgSoftSkills" required>
+                            </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--*************************************************************************************************************-->
+
+    <!--Modal edicion proyectos-->
+    <div class="modal fade" id="proyectosModal" tabindex="-1" aria-labelledby="proyectosModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="proyectosModalLabel">Editar sección "Proyectos"</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="imgProyecto" class="form-label"> URL: </label>
+                            <input type="url" placeholder="Inserte imágenes de sus proyectos" id="imgProyecto"
+                                name="imgProyecto" required>
+                            <div class="mb-3">
+                                <label for="textoProyecto" class="form-label">Descripción del proyecto: </label>
+                                <textarea class="form-control" id="textoProyecto" rows="8"></textarea>
+                            </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"

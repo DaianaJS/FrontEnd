@@ -273,5 +273,31 @@ margin-left: 2%;
 border-color: black;
 }
 .fa-solid.fa-pen-ruler{
-  color: black;
+  color: white;
+}
+.btn-dark{
+--bs-btn-bg: #dc758f;
+--bs-btn-hover-bg: #514065;
+--bs-btn-active-bg: #cb3f59;
+}
+.btn-success{
+  --bs-btn-hover-bg:#dc758f;
+  --bs-btn-border-color: white;
+  --bs-btn-active-bg:#01031a;
+  --bs-btn-active-border-color: #dc758f;
+  --bs-btn-hover-border-color:#dc758f;
+}
+input{
+  margin-left: 3%;
+  width: 85%;
+  text-align: center;
+  font-family: monospace;
+}
+#exampleInputEmail1{
+  width: 97%;
+  margin-left: -0.5%;
+}
+#exampleInputPassword1{
+  width: 97%;
+  margin-left: -0.5%;
 }
